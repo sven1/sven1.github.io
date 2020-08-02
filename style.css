@@ -1,0 +1,191 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #8aa6d4;
+	font-family: 'Lato';
+	margin: 0;
+}
+
+.card {
+	background-color: white;
+}
+
+.cardContent {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.cardContentWithIcon {
+	padding: 25px;
+}
+
+.cardIconHeader {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-color: #D4D4D4;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.round {
+	border-radius: 5px;
+	border-color: #D4D4D4;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.card p, .card ul {
+	font-size: 14px;
+	color: #424242;
+}
+
+.card hr {
+	height: 1px;
+	border: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #D4D4D4;
+}
+
+#about {
+	min-width: 325px;
+}
+
+#content {
+	max-width: 800px;
+}
+
+#about.card ul {
+	list-style-type: none;	
+	padding-left: 0;
+}
+
+.card ul li {
+	margin-bottom: 5px;
+}
+
+.card ul i {
+	margin-right: 15px;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #424242;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.wrapper > * {
+	flex: 1 100%;
+}
+
+@media screen and (min-width: 800px) and (min-height: 500px) {
+	#about {
+		flex: 1 0 0;
+		max-width: 400px;
+		margin-left: 10px;
+		position: sticky;
+		top: 10px;
+
+		border-radius: 5px;
+		border-color: #D4D4D4;
+		border-style: solid;
+		border-width: 1px;
+	}
+
+	#content {
+		flex: 5 0 0;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	#navbarContent {
+		display: block;
+	}
+
+	#content > * > span:first-of-type {
+		display: block;
+		margin-top: -10px;
+		padding-top: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#navbarContent {
+		display: none;
+	}
+
+	#about {
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		border-bottom-color: #D4D4D4;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		z-index: 100;
+	}
+
+	#content {
+		margin-top: 60px;
+	}
+
+	#menu {
+		display: block;
+	}
+
+	#content > * > span:first-of-type {
+		display: block;
+		margin-top: -70px;
+		padding-top: 70px;
+	}
+}
+
+#siteHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#content > * {
+	margin: 10px;
+}
+
+.collapsible {
+	cursor: pointer;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.mainNavbar {
+	padding-top: 5px;
+}
+
+.mainNavbar li a:hover .navigationIcon {
+	filter: none;
+}
+
+.navigationIcon {
+	filter: grayscale(100%);
+	display: block;
+	margin-bottom: 5px;
+}
+
+.visualizedLink {
+	text-decoration: underline;
+}
