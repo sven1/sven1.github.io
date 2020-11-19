@@ -3,6 +3,14 @@
 	padding: 0px;
 }
 
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 .main {
 	height: 100vh;
 	display: flex;
@@ -37,7 +45,6 @@ h4 {
 .content1 {
 	height: 10vh;
 	padding: 20px;
-	box-sizing: border-box;
 }
 
 .content2 {
@@ -49,7 +56,6 @@ h4 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	box-sizing: border-box;
 	padding: 20px;
 }
 
@@ -63,7 +69,6 @@ h4 {
 	justify-content: flex-end;
 	text-align: right;
 	height: 15vh;
-	box-sizing: border-box;
 }
 
 .content2-right {
@@ -72,7 +77,6 @@ h4 {
 
 .content3-right {
 	height: 25vh;
-	box-sizing: border-box;
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
