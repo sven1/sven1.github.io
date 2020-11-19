@@ -83,3 +83,7 @@ h4 {
 	align-items: flex-end;
 	padding: 20px;
 }
+
+.logo {
+	min-width: 50px;
+}
