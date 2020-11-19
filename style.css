@@ -7,9 +7,11 @@ html {
 	box-sizing: border-box;
 }
 
-body, html {
+body, html, .main {
 	height: 100%;
 	width: 100%;
+	min-height: 100vh;
+	min-width: 100vw;
 }
 
 *, *:before, *:after {
@@ -17,8 +19,6 @@ body, html {
 }
 
 .main {
-	height: 100%;
-	width: 100%;
 	display: flex;
 }
 
