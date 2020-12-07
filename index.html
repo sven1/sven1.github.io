@@ -7,39 +7,40 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;900&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
+		<a id="burgericon" href="#"><i class="menu_icon fas fa-bars"></i></a>
 		<div class="main">
-			<div class="main-left">
-				<div class="content1">
-					<i class="fas fa-bars"></i>
-				</div>
-				<div class="content2">
+			<h1>Nils Förster</h1>
 
-				</div>
-				<div class="content3">
-					<div>
-						<h2>Kontakt</h2>
-					</div>
-					<div>
-						<h5>Aachenerstrasse 78</h5>
-						<h5>Eupen 4700</h5>
-					</div>
-				</div>
-			</div>
-			<div class="main-right">
-				<div class="content1-right">
-					<div>
-						<h4>FÖRSTER NILS</h4>
-					</div>
-				</div>
-				<div class="content2-right">
+			<hr>
 
-				</div>
-				<div class="content3-right">
-					<img class="logo" src="logo_eureha.svg" width="10%" height="auto" />
-				</div>
+			<div class="jobs">
+				<ul>
+					<li><a href="#">Akkupunktur</a></li>
+					<li><a href="#">Kinesitherapeut</a></li>
+				</ul>
 			</div>
 		</div>
+		<div id="mymenu" class="myactive">
+			<div class="menucontent">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Akkupunktur</a></li>
+					<li><a href="#">Kinesitherapeut</a></li>
+					<li><a href="#">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="akkupunktur">
+			<h1>Akkupunktur</h1>
+		</div>
+		<script>
+			burgericon.addEventListener('click', evt => {
+				mymenu.classList.toggle('myactive');
+			});
+		</script>
 	</body>
 </html>

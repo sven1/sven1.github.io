@@ -1,92 +1,105 @@
-* {
-	margin: 0px;
-	padding: 0px;
+html, body {
+	margin: 0;
+	padding: 0;
 }
 
-html {
-	box-sizing: border-box;
+:root {
+	--beige: #C0A878;
+	--brown: #904818;
+	--blue: #3060A8;
+	--gray: #D1E0EC;
+	--yellow: #DAC8B1;
 }
 
-body, html, .main {
-	height: 100%;
-	width: 100%;
-	min-height: 100vh;
-	min-width: 100vw;
-}
-
-*, *:before, *:after {
-	box-sizing: inherit;
-}
-
-.main {
+.main, .akkupunktur {
+	height: 100vh;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.main-left {
-	background-color: #3060A8;
-	width: 50%;
+.akkupunktur {
+	background-color: var(--beige);
 }
 
-.main-right {
-	background-color: #D1E0EC;
-	width: 50%;
+.main h1 {
+	font-size: 3vw;
+	margin-bottom: 25px;
 }
 
-h2 {
+.jobs { 
+	margin-top: 10px;
+}
+
+.jobs ul {
+	list-style: none;
+	padding: 0;
+}
+
+.jobs ul li {
+	display: inline;
+	padding: 25px;
+}
+
+.jobs ul li a {
 	color: black;
+	text-decoration: none;
+	font-size: 0.9vw;
 }
 
-.content3 h3 {
-	color: #D1E0EC;
-	font-weight: bold;
+.jobs ul li a:hover {
+	text-decoration: underline;
 }
 
-h4 {
-	font-weight:bold;
+hr {
+	border: 2px solid black;
+	width: 10%;
 }
 
-.content1 {
-	height: 10%;
-	padding: 20px;
+#burgericon {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	z-index: 100;
 }
 
-.content2 {
-	height: 70%;
+#mymenu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: black;
 }
 
-.content3 {
-	height: 20%;
+.myactive {
+	visibility: hidden;
+}
+
+.menucontent {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
-	justify-content: space-between;
-	padding: 20px;
+	min-height: 100vh;
 }
 
-.content3 h2, h1 {
-	color: #D1E0EC;
+.menucontent ul {
+	list-style: none;
 }
 
-.content1-right {
-	padding: 20px;
-	display: flex;
-	justify-content: flex-end;
-	text-align: right;
-	height: 15%;
+.menucontent ul li {
+	margin: 25px;
+	text-align: center;
 }
 
-.content2-right {
-	height: 60%;
+.menucontent ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 40px;
 }
 
-.content3-right {
-	height: 25%;
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: column;
-	align-items: flex-end;
-	padding: 20px;
-}
-
-.logo {
-	min-width: 50px;
+.menucontent ul li a:hover {
+	text-decoration: underline;
 }
