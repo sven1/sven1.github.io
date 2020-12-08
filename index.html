@@ -11,36 +11,57 @@
 		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;900&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
-		<a id="burgericon" href="#"><i class="menu_icon fas fa-bars"></i></a>
-		<div class="main">
-			<h1>Nils Förster</h1>
+		<!--
+		<a id="menu-icon" onclick="toggleMenu()"><i class="menu_icon fas fa-bars"></i></a>
+		-->
+		<div id="menu-icon" onclick="toggleMenu()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 
-			<hr>
-
-			<div class="jobs">
-				<ul>
-					<li><a href="#">Akkupunktur</a></li>
-					<li><a href="#">Kinesitherapeut</a></li>
-				</ul>
+		<div id="menu">
+			<div class="menu-content">
+				<nav>
+					<ul>
+						<li><a onclick="toggleMenu()" href="#akkupunktur">Akkupunktur</a></li>
+						<li><a onclick="toggleMenu()" href="#kine">Kinesitherapie</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
-		<div id="mymenu" class="myactive">
-			<div class="menucontent">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Akkupunktur</a></li>
-					<li><a href="#">Kinesitherapeut</a></li>
-					<li><a href="#">Kontakt</a></li>
-				</ul>
+
+		<div class="content">
+			<div class="landing">
+				<h1>Nils Förster</h1>
+
+				<hr>
+
+				<div class="jobs">
+					<ul>
+						<li><a href="#">Akkupunktur</a></li>
+						<li><a href="#">Kinesitherapeut</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="akkupunktur">
+				<h1>Akkupunktur</h1>
+			</div>
+			<div id="kine">
+				<h1>Kinesitherapie</h1>
 			</div>
 		</div>
-		<div class="akkupunktur">
-			<h1>Akkupunktur</h1>
-		</div>
+
 		<script>
-			burgericon.addEventListener('click', evt => {
-				mymenu.classList.toggle('myactive');
-			});
+			function toggleMenu() {
+				var menu = document.getElementById("menu");
+				var menu_icon = document.getElementById("menu-icon");
+
+				menu.classList.toggle("menu-opened");
+				menu_icon.classList.toggle("menu-opened");
+
+				return true;
+			};
 		</script>
 	</body>
 </html>
