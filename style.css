@@ -99,8 +99,13 @@ a:hover {
     justify-content: center;
 }
 
-.menu-content ul {
+ul {
 	list-style: none;	
+	padding: 0;
+}
+
+ul a {
+	color: black;
 }
 
 .menu-content ul li {
@@ -130,12 +135,62 @@ a:hover {
 	justify-content: center;
 }
 
+.landing ul li {
+	display: inline-block;
+	margin: 20px;
+}
+
+.landing hr {
+	display: block;
+	border-width: 1px;
+	width: 100px;
+}
+
 #akkupunktur {
-	height: 100vh;
-	background-color: purple;
+	min-height: 100vh;
+}
+
+#akkupunktur h1 {
+	text-align: center;
+	font-size: 42px;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 
 #kine {
+	min-height: 100vh;
+}
+
+#kine h1 {
+	text-align: center;
+	font-size: 42px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+.subContent {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.akkupunktur_icon, .kine_icon {
 	height: 100vh;
-	background-color: yellow;
+	padding: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.akkupunktur_icon img, .kine_icon img {
+	max-width: 25vh;
+	width: 25vh;
+}
+
+.akkupunktur_icon {
+	background-color: var(--yellow);
+}
+
+.kine_icon {
+	background-color: var(--gray);
 }
