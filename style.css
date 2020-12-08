@@ -173,7 +173,7 @@ ul a {
 	padding-bottom: 50px;
 }
 
-.akkupunktur_icon, .kine_icon {
+#akkupunktur_icon, #kine_icon {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -181,20 +181,20 @@ ul a {
 	justify-content: center;
 }
 
-.akkupunktur_icon img, .kine_icon img {
+#akkupunktur_icon img, #kine_icon img {
 	max-width: 25vh;
 }
 
-.akkupunktur_icon {
+#akkupunktur_icon {
 	background-color: var(--yellow);
 }
 
-.kine_icon {
+#kine_icon {
 	background-color: var(--gray);
 }
 
 @supports (-webkit-touch-callout: none) {
-	.akkupunktur_icon, .kine_icon, .landing {
+	#akkupunktur_icon, #kine_icon, .landing {
 		min-height: -webkit-fill-available;
 	}	
 }
