@@ -184,7 +184,6 @@ ul a {
 
 .akkupunktur_icon img, .kine_icon img {
 	max-width: 25vh;
-	width: 25vh;
 }
 
 .akkupunktur_icon {
@@ -193,4 +192,10 @@ ul a {
 
 .kine_icon {
 	background-color: var(--gray);
+}
+
+@supports (-webkit-touch-callout: none) {
+	.akkupunktur_icon, .kine_icon, .landing {
+		height: -webkit-fill-available;
+	}	
 }
