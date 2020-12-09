@@ -27,6 +27,43 @@ a:hover {
 	text-decoration: underline;
 }
 
+
+.address-wrapper {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+
+#addresses {
+	display: none;
+	padding: 20px;
+
+	background-color: var(--yellow);
+	color: black;
+
+	opacity: 0;
+
+	transition: visibility 1s,opacity 1s ease;
+}
+
+#addresses.adress-opened {
+	display: block;
+	opacity: 1;
+}
+
+.address-icon {
+	padding: 15px;
+	background-color: var(--yellow);
+	color: black;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+.address-icon i {
+	padding-bottom: 15px;
+}
+
 #menu-icon {
 	z-index: 100;
 	position: fixed;
@@ -138,6 +175,7 @@ ul a {
 	align-items: center;
 	justify-content: center;
 	font-family: 'Raleway', sans-serif;
+	position: relative;
 }
 
 .landing ul li {
