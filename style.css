@@ -153,6 +153,14 @@ ul a {
 
 .landing h1 {
 	font-size: calc(2rem + 1.5vw);
+	margin-bottom: 0;
+}
+
+.tel {
+	font-size: 0.8rem;
+	margin-bottom: 25px;
+	font-family: monospace, sans-serif;
+	color: black;
 }
 
 #akkupunktur, #kine {
@@ -180,6 +188,7 @@ ul a {
 #akkupunktur p, #kine p {
 	font-weight: 300;
 	font-size: 16px;
+	hyphens: auto;
 	text-align: justify;
 }
 
