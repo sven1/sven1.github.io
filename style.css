@@ -133,6 +133,7 @@ ul a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	font-family: 'Raleway', sans-serif;
 }
 
 .landing ul li {
@@ -146,22 +147,29 @@ ul a {
 	width: 100px;
 }
 
+.landing h1 {
+	font-size: 5vh;
+}
+
 #akkupunktur, #kine {
 	min-height: 100vh;
 	font-family: 'Raleway', sans-serif;
-	padding: 100px;
+	padding-left: 20vw;
+	padding-right: 20vw;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 
 #akkupunktur h1, #kine h1 {
 	text-align: center;
-	font-size: 50px;
+	font-size: 5vh;
 	padding-bottom: 50px;
 	font-weight: 900;
 }
 
 #akkupunktur h2, #kine h2 {
 	text-align:center;
-	font-size: 36px;
+	font-size: 3vh;
 	font-weight: 900;
 }
 
@@ -186,7 +194,7 @@ ul a {
 
 #akkupunktur h3, #kine h3 {
 	text-align:center;
-	font-size: 20px;
+	font-size: 2vh;
 	font-weight: 900;
 }
 
