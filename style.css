@@ -11,6 +11,10 @@ html, body {
 	height: 100%;
 }
 
+html {
+	font-size: 100%;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -148,28 +152,28 @@ ul a {
 }
 
 .landing h1 {
-	font-size: 5vh;
+	font-size: calc(2rem + 1.5vw);
 }
 
 #akkupunktur, #kine {
 	min-height: 100vh;
 	font-family: 'Raleway', sans-serif;
-	padding-left: 20vw;
-	padding-right: 20vw;
-	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
 }
 
 #akkupunktur h1, #kine h1 {
 	text-align: center;
-	font-size: 5vh;
+	font-size: calc(1.8rem + 1.1vw);
 	padding-bottom: 50px;
 	font-weight: 900;
 }
 
 #akkupunktur h2, #kine h2 {
 	text-align:center;
-	font-size: 3vh;
+	font-size: calc(1.3rem + 0.8vw);
 	font-weight: 900;
 }
 
@@ -194,7 +198,7 @@ ul a {
 
 #akkupunktur h3, #kine h3 {
 	text-align:center;
-	font-size: 2vh;
+	font-size: calc(0.9rem + 0.3vw);
 	font-weight: 900;
 }
 
