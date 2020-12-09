@@ -21,6 +21,7 @@
 			<div class="menu-content">
 				<nav>
 					<ul>
+						<li><a onclick="toggleMenu()" href="#landing">Über mich</a></li>
 						<li><a onclick="toggleMenu()" href="#akkupunktur_icon">Akkupunktur</a></li>
 						<li><a onclick="toggleMenu()" href="#kine_icon">Kinesitherapie</a></li>
 					</ul>
@@ -29,7 +30,7 @@
 		</div>
 
 		<div class="content">
-			<div class="landing">
+			<div id="landing">
 				<h1>Nils Förster</h1>
 				<a class="tel" href="tel:+32479213248">+32 479 21 32 48</a>
 
@@ -38,25 +39,20 @@
 				<div>
 					<ul>
 						<li>
-							<a href="#akkupunktur_icon">Akkupunktur</a>
+							<a class="job-link" href="#akkupunktur_icon">Akkupunktur</a>
+							<address>
+								Bachstraße 20<br>
+								B-4730, Raeren
+							</address>
 						</li>
 						<li>
-							<a href="#kine_icon">Kinesitherapeut</a>
+							<a class="job-link" href="#kine_icon">Kinesitherapeut</a>
+							<address>
+								Aachenerstraße 78<br>
+								B-4700, Eupen
+							</address>
 						</li>
 					</ul>
-				</div>
-				<div class="address-wrapper">
-					<a class="address-icon" onclick="toggleAddresses()"><i class="fas fa-map-marked-alt"></i></a>
-					<div id="addresses">
-						<address>
-							Aachenerstraße 78<br>
-							B-4700, Eupen
-						</address>
-						<address>
-							Bachstraße 20<br>
-							B-4730, Raeren
-						</address>
-					</div>
 				</div>
 			</div>
 			<div id="akkupunktur_icon">
@@ -191,12 +187,6 @@
 				menu_icon.classList.toggle("menu-opened");
 
 				return true;
-			};
-
-			function toggleAddresses() {
-				var addresses = document.getElementById("addresses");
-
-				addresses.classList.toggle("adress-opened");
 			};
 		</script>
 	</body>

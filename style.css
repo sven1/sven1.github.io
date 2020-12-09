@@ -27,43 +27,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-
-.address-wrapper {
-	position: absolute;
-	bottom: 0;
-	text-align: center;
-	width: 100%;
-}
-
-#addresses {
-	display: none;
-	padding: 20px;
-
-	background-color: var(--yellow);
-	color: black;
-
-	opacity: 0;
-
-	transition: visibility 1s,opacity 1s ease;
-}
-
-#addresses.adress-opened {
-	display: block;
-	opacity: 1;
-}
-
-.address-icon {
-	padding: 15px;
-	background-color: var(--yellow);
-	color: black;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
-}
-
-.address-icon i {
-	padding-bottom: 15px;
-}
-
 #menu-icon {
 	z-index: 100;
 	position: fixed;
@@ -138,6 +101,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 ul {
@@ -168,28 +132,43 @@ ul a {
      opacity: 1;
 }
 
-.landing {
+#landing {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-family: 'Raleway', sans-serif;
-	position: relative;
 }
 
-.landing ul li {
-	display: inline-block;
+#landing ul li {
 	margin: 20px;
+	text-align: center;
 }
 
-.landing hr {
+#landing ul {
+	display: flex;
+	justify-content: center;
+}
+
+.job-link {
+	font-weight: 900;
+	font-size: calc(1rem + 0.2vw);
+}
+
+#landing address {
+	font-family: monospace;
+	font-size: 0.8rem;
+	font-style: normal;
+}
+
+#landing hr {
 	display: block;
 	border-width: 1px;
 	width: 100px;
 }
 
-.landing h1 {
+#landing h1 {
 	font-size: calc(2rem + 1.5vw);
 	margin-bottom: 0;
 }
@@ -274,7 +253,7 @@ ul a {
 }
 
 @supports (-webkit-touch-callout: none) {
-	#akkupunktur_icon, #kine_icon, .landing {
+	#akkupunktur_icon, #kine_icon, #landing {
 		min-height: -webkit-fill-available;
 	}	
 }
