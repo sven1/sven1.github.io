@@ -263,15 +263,16 @@ ul a {
 
 #icon-scroll, #icon-scroll:before {
 	position: absolute;
-	left: 50%;
+	display: flex;
+	justify-content: center;
 
 	opacity: 1;
 	transition: opacity 500ms ease-in-out;
 }
 
 #icon-scroll {
-	width: 27px;
-	height: 55px;
+	width: 24px;
+	height: 45px;
 	margin-left: 0px;
 	bottom: 2vh;
 	margin-top: -35px;
@@ -284,9 +285,9 @@ ul a {
 	width: 16px;
 	height: 16px;
 	background: black;
-	margin-left: -8px;
-	top: 8px;
-	border-radius: 10px;
+	margin-left: 0px;
+	top: 4px;
+	border-radius: 16px;
 	-webkit-animation-duration: 3.5s;
 	animation-duration: 3.5s;
 	-webkit-animation-iteration-count: infinite;
@@ -302,7 +303,7 @@ ul a {
 	100% {
 		opacity: 0;
 		-webkit-transform: translateY(25px);
-		transform: translateY(25px);
+		transform: translateY(20px);
 	}
 }
 
@@ -313,7 +314,7 @@ ul a {
 	100% {
 		opacity: 0;
 		-webkit-transform: translateY(25px);
-		transform: translateY(25px);
+		transform: translateY(20px);
 	}
 }
 
