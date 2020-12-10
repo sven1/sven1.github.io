@@ -8,7 +8,6 @@
 
 html, body {
 	margin: 0;
-	height: 100%;
 }
 
 html {
@@ -262,12 +261,15 @@ ul a {
 	}	
 }
 
-.icon-scroll, .icon-scroll:before {
+#icon-scroll, #icon-scroll:before {
 	position: absolute;
 	left: 50%;
+
+	opacity: 1;
+	transition: opacity 500ms ease-in-out;
 }
 
-.icon-scroll {
+#icon-scroll {
 	width: 27px;
 	height: 55px;
 	margin-left: 0px;
@@ -277,7 +279,7 @@ ul a {
 	border-radius: 25px;
 }
 
-.icon-scroll:before {
+#icon-scroll:before {
 	content: '';
 	width: 16px;
 	height: 16px;

@@ -54,7 +54,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="icon-scroll"></div>
+				<div id="icon-scroll"></div>
 			</div>
 			<div id="akkupunktur_icon">
 				<img src="logo_tcm.svg"/>
@@ -189,6 +189,19 @@
 
 				return true;
 			};
+
+			var removeScrollIcon = function(event) {
+				var scrollIcon = document.getElementById("icon-scroll");
+
+				scrollIcon.style.opacity = '0';
+
+				setTimeout(function(){
+					scrollIcon.parentNode.removeChild(scrollIcon);
+					event.currentTarget.removeEventListener(event.type, removeScrollIcon);
+				}, 500);
+			};
+
+			window.addEventListener('scroll', removeScrollIcon);
 		</script>
 	</body>
 </html>
