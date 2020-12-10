@@ -135,7 +135,6 @@ ul a {
 
 #landing {
 	min-height: 100vh;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -185,7 +184,6 @@ ul a {
 
 #akkupunktur, #kine {
 	min-height: 100vh;
-	height: 100vh;
 	font-family: 'Raleway', sans-serif;
 	padding-left: 15vw;
 	padding-right: 15vw;
@@ -222,7 +220,6 @@ ul a {
 
 #akkupunktur_icon, #kine_icon {
 	min-height: 100vh;
-	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
